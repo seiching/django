@@ -10,6 +10,6 @@ def homepage(request):
      for count,post in enumerate(posts):
          post_lists.append("No.{}:".format(str(count)) +str(post)+ "<hr>")
          post_lists.append("<small>" + str(post.body.encode('utf-8'))\
-          +"</small><br><br>")
+          +"</small><br> seiching<br>")
      return HttpResponse(post_lists)
     
